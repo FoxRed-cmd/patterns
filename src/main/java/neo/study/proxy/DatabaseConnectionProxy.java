@@ -14,9 +14,8 @@ public class DatabaseConnectionProxy implements DatabaseConnection {
     }
 
     @Override
-    public String getDatabaseName() {
-        return String.format("подключено %s:%d/%s", serverAddress, port,
-                database.getDatabaseName());
+    public String connect() {
+        return String.format("подключено %s:%d/%s", serverAddress, port, database.connect());
     }
 
 }

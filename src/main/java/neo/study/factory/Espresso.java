@@ -2,8 +2,8 @@ package neo.study.factory;
 
 public class Espresso extends Coffee {
 
-    public Espresso(String name) {
-        super(name);
+    public Espresso() {
+        this.name = CoffeeType.ESPRESSO.name();
     }
 
     @Override

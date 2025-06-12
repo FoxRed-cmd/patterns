@@ -46,10 +46,10 @@ public class App {
         // Proxy
         System.out.println("<--------------------Proxy---------------------->");
         DatabaseConnectionImpl database = new DatabaseConnectionImpl("test_db");
-        database.getDatabaseName();
+        System.out.println(database.connect());
 
         DatabaseConnection proxy = new DatabaseConnectionProxy(database, "localhost", 3306);
-        System.out.println(proxy.getDatabaseName());
+        System.out.println(proxy.connect());
         System.out.println("<--------------------Proxy---------------------->\n");
     }
 }

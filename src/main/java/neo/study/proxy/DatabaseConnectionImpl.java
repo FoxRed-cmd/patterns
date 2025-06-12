@@ -8,7 +8,7 @@ public class DatabaseConnectionImpl implements DatabaseConnection {
     }
 
     @Override
-    public String getDatabaseName() {
+    public String connect() {
         return databaseName;
     }
 }
